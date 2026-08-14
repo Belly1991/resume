@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belly Lee — Resume</title>
+<meta name="description" content="Belly Lee 的線上簡歷（ATS 友善）">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #d8d8d8;
+    --accent: #2b5797;
+    --bg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e8e8; --muted:#a0a0a0; --rule:#3a3a3a; --accent:#7aa5e8; --bg:#161616; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+    max-width: 46rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif;
+  }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .title { color: var(--muted); font-size: 1.05rem; margin: 0 0 .75rem; }
+  .contact { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; font-size: .9rem; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  section { margin-bottom: 2rem; }
+  h2 {
+    font-size: .82rem; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--muted); margin: 0 0 .9rem; padding-bottom: .35rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1rem; margin: 0; }
+  .meta { color: var(--muted); font-size: .88rem; margin: .1rem 0 .5rem; }
+  .job { margin-bottom: 1.4rem; }
+  .job:last-child { margin-bottom: 0; }
+  ul.bullets { margin: 0; padding-left: 1.15rem; }
+  ul.bullets li { margin-bottom: .3rem; }
+  .skills { margin: 0; }
+  .skills dt { font-weight: 600; float: left; clear: left; width: 8rem; }
+  .skills dd { margin: 0 0 .4rem 8rem; color: var(--muted); }
+
+  @media (max-width: 480px) {
+    body { padding: 2rem 1.1rem 3rem; }
+    .skills dt { float: none; width: auto; }
+    .skills dd { margin-left: 0; margin-bottom: .8rem; }
+  }
+  @media print {
+    :root { --ink:#000; --muted:#444; --bg:#fff; --accent:#000; }
+    body { padding: 0; font-size: 11pt; max-width: none; }
+    section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Belly Lee</h1>
+  <p class="title">Senior Frontend Engineer</p>
+  <ul class="contact">
+    <li><a href="mailto:belly.lee@neurv.com">belly.lee@neurv.com</a></li>
+    <li>Taipei, Taiwan</li>
+    <li><a href="https://github.com/Belly1991">github.com/Belly1991</a></li>
+  </ul>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p>八年前端工程經驗，專注於 React 生態系與設計系統建置。帶領過 5 人團隊完成大型後台重構，將首屏載入時間降低 60%。熟悉無障礙規範與效能優化。</p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <h3>Senior Frontend Engineer — Neurv</h3>
+    <p class="meta">2021.03 – Present · Taipei</p>
+    <ul class="bullets">
+      <li>主導設計系統建置，涵蓋 40+ 元件，導入後新功能開發時程縮短 35%。</li>
+      <li>重構舊有 Angular 後台為 React + TypeScript，首屏載入從 4.2s 降至 1.7s。</li>
+      <li>建立 CI 前端測試流程（Vitest + Playwright），線上回歸缺陷減少 50%。</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Frontend Engineer — Example Corp</h3>
+    <p class="meta">2018.06 – 2021.02 · Taipei</p>
+    <ul class="bullets">
+      <li>開發電商前台結帳流程，年交易額達 NT$2 億。</li>
+      <li>導入 Webpack code splitting 與圖片延遲載入，Lighthouse 效能分數自 52 提升至 91。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>TypeScript, JavaScript, HTML, CSS, Python</dd>
+    <dt>Frameworks</dt><dd>React, Next.js, Vue, Tailwind CSS</dd>
+    <dt>Tools</dt><dd>Vite, Playwright, Git, Docker, GitHub Actions</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="job">
+    <h3>國立台灣大學 — 資訊工程學系 學士</h3>
+    <p class="meta">2014 – 2018</p>
+  </div>
+</section>
+
+</body>
+</html>
